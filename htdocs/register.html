@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>College Library - Register</title>
+</head>
+<body class="register-page">
+
+  <nav>
+    <a href="index.html" class="home-btn">Home</a>
+  </nav>
+
+  <nav class="register-container">
+    <h2>Register for College Library</h2>
+    <form action="register.php" method="POST">
+  <input type="text" name="full_name" placeholder="Full Name" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="password" name="password" placeholder="Password" required />
+
+  <select name="role" required>
+    <option value="">Select Role</option>
+    <option value="student">Student</option>
+    <option value="admin">Admin</option>
+  </select>
+
+  <button type="submit">Register</button>
+
+
+
+      <p class="login-link">
+        <span>Already have an account?</span>
+        <span><a href="login.html">Login here</a></span>
+      </p>
+    </form>
+  </nav>
+
+  <script src="script/script.js"></script>
+</body>
+</html>

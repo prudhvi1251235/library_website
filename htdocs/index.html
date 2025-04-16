@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online College Library</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body.home-page {
+      background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .hero {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 12px;
+      margin: 50px auto;
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #ddd;
+    }
+
+    .flex-sections {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 40px auto;
+      max-width: 1000px;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .flex-sections section {
+      background: rgba(255,255,255,0.1);
+      padding: 25px;
+      border-radius: 10px;
+      flex: 1 1 300px;
+      backdrop-filter: blur(4px);
+      color: #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      transition: 0.3s ease;
+    }
+
+    .flex-sections section:hover {
+      transform: scale(1.03);
+      background: rgba(255,255,255,0.15);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body class="home-page">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Dashboard</a>
+    <a href="aboutus.html">About</a>
+    <a href="contactus.html">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>📚 Online College Library</h1>
+    <p>Your gateway to reading, borrowing, and growing knowledge.</p>
+  </header>
+
+  <main class="flex-sections">
+    <section class="about">
+      <h2>About Us</h2>
+      <p>We are Group L, building an easy-to-use digital library where students can borrow and return books without visiting a physical space. Created using HTML, PHP, CSS and MySQL.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Email: contact@college-library.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Address: College Campus, Main Road, India</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Group L - Online College Library</p>
+  </footer>
+</body>
+</html>

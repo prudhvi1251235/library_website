@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Library - Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="login-page">
+
+  <nav>
+    <a href="index.html" class="home-btn">Home</a>
+  </nav>
+
+  <div class="login-container">
+    <h2>Login to College Library</h2>
+
+    <form action="login.php" method="POST">
+      <label for="email">Email:</label>
+      <span><input type="email" id="email" name="email" required /></span>
+
+      <label for="password">Password:</label>
+      <span><input type="password" id="password" name="password" required /></span>
+
+      <button type="submit">Login</button>
+
+      <p class="register-link">
+        <span>Don't have an account?</span> 
+        <span><a href="register.html">Register here</a></span>
+      </p>
+    </form>
+  </div>
+
+</body>
+</html>

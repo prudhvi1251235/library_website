@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="logo">
+            <h1>Griffith Online Library</h1>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="student-dashboard.html">Home</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h2>Welcome to College Library!</h2>
+            <p>Manage your books below:</p>
+        </section>
+
+        <section class="book-management">
+            <!-- Available Books Section -->
+            <nav class="book-section">
+                <h3>Available Books</h3>
+                <div class="books-list">
+                    <span class="book-item">
+                        <p>Book Title 1</p>
+                        <button class="borrow-btn" onclick="toggleAction('borrow', this)">Borrow</button>
+                    </span>
+                    <span class="book-item">
+                        <p>Book Title 2</p>
+                        <button class="borrow-btn" onclick="toggleAction('borrow', this)">Borrow</button>
+                    </span>
+                    <span class="book-item">
+                        <p>Book Title 3</p>
+                        <button class="borrow-btn" onclick="toggleAction('borrow', this)">Borrow</button>
+                    </span>
+                </div>
+            </nav>
+
+            <!-- Borrowed Books Section -->
+            <nav class="book-section">
+                <h3>Borrowed Books</h3>
+                <div class="books-list">
+                    <span class="book-item">
+                        <p>Book Title 4</p>
+                        <button class="return-btn" onclick="toggleAction('return', this)">Return</button>
+                    </span>
+                    <span class="book-item">
+                        <p>Book Title 5</p>
+                        <button class="return-btn" onclick="toggleAction('return', this)">Return</button>
+                    </span>
+                </div>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Griffith College | Online Library</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
