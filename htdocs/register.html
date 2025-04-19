@@ -3,39 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
   <title>College Library - Register</title>
-</head>
-<body class="register-page">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
+    nav {
+      background-color: rgba(0, 123, 255, 0.85);
+      padding: 12px 20px;
+    }
+
+    .home-btn {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .register-container {
+      max-width: 500px;
+      margin: 70px auto;
+      background: rgba(255, 255, 255, 0.94);
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(6px);
+    }
+
+    h2 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 25px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #218838;
+      transform: scale(1.02);
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 15px;
+    }
+
+    .login-link a {
+      color: #007bff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .register-container {
+        margin: 30px 20px;
+        padding: 25px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
   <nav>
-    <a href="index.html" class="home-btn">Home</a>
+    <a href="index.html" class="home-btn">🏠 Home</a>
   </nav>
 
-  <nav class="register-container">
+  <div class="register-container">
     <h2>Register for College Library</h2>
+
     <form action="register.php" method="POST">
-  <input type="text" name="full_name" placeholder="Full Name" required />
-  <input type="email" name="email" placeholder="Email" required />
-  <input type="password" name="password" placeholder="Password" required />
+      <input type="text" name="full_name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      
+      <select name="role" required>
+        <option value="">Select Role</option>
+        <option value="student">Student</option>
+        <option value="admin">Admin</option>
+      </select>
 
-  <select name="role" required>
-    <option value="">Select Role</option>
-    <option value="student">Student</option>
-    <option value="admin">Admin</option>
-  </select>
-
-  <button type="submit">Register</button>
-
-
+      <button type="submit">Register</button>
 
       <p class="login-link">
-        <span>Already have an account?</span>
-        <span><a href="login.html">Login here</a></span>
+        Already have an account? <a href="login.html">Login here</a>
       </p>
     </form>
-  </nav>
-
-  <script src="script/script.js"></script>
+  </div>
 </body>
 </html>
