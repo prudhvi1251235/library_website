@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Online College Library</title>
   <link rel="stylesheet" href="css/style.css" />
+  <body class="home-page">
   <style>
     body.home-page {
       background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
@@ -64,6 +65,15 @@
       color: white;
       margin-top: 30px;
     }
+    /* For all links - normal, visited, hover, active */
+    a, a:visited, a:hover, a:active {
+        color: white;           /* Or any color you want */
+        text-decoration: none;  /* Remove underline */
+        /* Optional: Hover effect */
+    a:hover {
+        color: #ffd700;          /* Gold/yellow on hover, can change */
+        }
+
   </style>
 </head>
 <body class="home-page">
@@ -72,8 +82,8 @@
     <a href="login.html">Login</a>
     <a href="register.html">Register</a>
     <a href="login.html">Dashboard</a>
-    <a href="aboutus.html">About</a>
-    <a href="contactus.html">Contact</a>
+    <a href="Contactus.html">Contactus</a>
+    <a href="Aboutus.html">Aboutus</a>
   </nav>
 
   <header class="hero">
@@ -81,22 +91,10 @@
     <p>Your gateway to reading, borrowing, and growing knowledge.</p>
   </header>
 
-  <main class="flex-sections">
-    <section class="about">
-      <h2>About Us</h2>
-      <p>We are Group L, building an easy-to-use digital library where students can borrow and return books without visiting a physical space. Created using HTML, PHP, CSS and MySQL.</p>
-    </section>
-
-    <section class="contact">
-      <h2>Contact Us</h2>
-      <p>Email: contact@college-library.com</p>
-      <p>Phone: +91 9876543210</p>
-      <p>Address: College Campus, Main Road, India</p>
-    </section>
-  </main>
 
   <footer>
     <p>© 2025 Group L - Online College Library</p>
   </footer>
 </body>
 </html>
+
